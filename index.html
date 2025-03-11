@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Trade Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="trade-card">
+        <div class="trade-header">
+            <div class="trade-pair" contenteditable="true">BTC/USDT</div>
+            <div class="trade-date" contenteditable="true">January 15, 2025</div>
+        </div>
+        
+        <div class="price-row">
+            <div class="price-label">Entry Price</div>
+            <div class="price-value" contenteditable="true">$4,825</div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="price-row">
+            <div class="price-label">Exit Price</div>
+            <div class="price-value" contenteditable="true">$63,800</div>
+        </div>
+        
+        <div class="profit-row">
+            <div class="profit-label">PnL</div>
+            <div class="profit-value" contenteditable="true">+1222.3%</div>
+        </div>
+        
+        <div id="chart-container" class="chart-placeholder">
+            <button id="add-chart-btn" class="add-chart-btn">Add Chart Image</button>
+        </div>
+        
+        <div class="tag-container">
+            <div class="tag box-tag active" contenteditable="true">Box</div>
+            <div class="tag daily-tag active" contenteditable="true">Daily</div>
+            <div class="tag strategy-tag active" contenteditable="true">Strategy</div>
+        </div>
+    </div>
+    
+    <input type="file" id="chart-input" accept="image/*" style="display: none;" />
+    
+    <script src="script.js"></script>
+</body>
+</html>
